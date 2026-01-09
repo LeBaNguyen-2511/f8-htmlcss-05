@@ -22,6 +22,19 @@ a {
 }
 
 /* ======================= Common ======================= */
+.section-heading {
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.25;
+}
+
+.section-desc {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
 .btn {
     --height: 52px;
 
@@ -109,4 +122,96 @@ a {
 
 .header__signup {
     min-width: 113px;
+}
+
+/* ======================= Hero ======================= */
+.hero {
+    margin-top: 68px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__title {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero__title::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.hero__heading {
+    margin: 12px 0 20px;
+    font-size: 6rem;
+    line-height: 1.17;
+}
+
+.hero__heading-strong {
+    color: var(--primary-color);
+}
+
+.hero__subscribe-form {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 16px 42px 0px #00000012;
+}
+
+.hero__subscribe-form-input {
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    font-family: Open Sans, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero__subscribe-form-input::placeholder {
+    color: var(--secondary-color);
+}
+
+.hero__subscribe-form-btn {
+    --height: 58px;
+
+    border: none;
+    background: var(--primary-color);
+}
+
+.hero__form-commit {
+    margin-top: 20px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.hero__media {
+    padding: 0 74px 0 100px;
+}
+
+.hero__img {
+    width: 296px;
+    height: 562px;
 }
