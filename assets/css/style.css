@@ -22,6 +22,10 @@ a {
 }
 
 /* ======================= Common ======================= */
+main > * {
+    margin-top: 160px;
+}
+
 .section-heading {
     color: var(--third-color);
     font-weight: 700;
@@ -218,6 +222,7 @@ a {
 .hero__img {
     width: 296px;
     height: 562px;
+    vertical-align: bottom;
 }
 
 .hero__media-deposite {
@@ -304,4 +309,40 @@ a {
 .hero__media-secured-text {
     color: #fff;
     font-size: 8px;
+}
+
+/* ======================= Works ======================= */
+.works__inner {
+    display: flex;
+}
+
+.works__media {
+    position: relative;
+    width: 49%;
+    padding-right: 107px;
+}
+
+.works__media-bg {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 470px;
+    height: 550px;
+}
+
+.works__img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.works__decor-up {
+    position: absolute;
+}
+
+.works__decor-down {
+    position: absolute;
 }
