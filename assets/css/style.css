@@ -513,3 +513,113 @@ main > * {
 
     margin-top: 38px;
 }
+
+.card__media {
+    position: relative;
+    width: 49%;
+    padding: 48px 88px 55px 0;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__decor-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 13px;
+    border-radius: 12px;
+    font-family: Inter, sans-serif;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px #00000012;
+}
+
+.card__decor-up-left {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.card__decor-up-left-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(218 100 100 / 10%);
+}
+
+.card__decor-up-left-text-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.card__decor-up-left-money {
+    color: var(--third-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card__decor-up-left-payment {
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.card__decor-up-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 67px;
+}
+
+.card__decor-up-left-price {
+    color: var(--third-color);
+    font-size: 1.6rem;
+}
+
+.card__decor-up-left-time {
+    margin-top: 3px;
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.card__decor-down {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.card__decor-down-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.card__decor-down-text {
+    display: block;
+    margin: 14px 0 6px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.card__decor-down-price {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
