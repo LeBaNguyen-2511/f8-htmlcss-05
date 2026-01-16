@@ -469,22 +469,27 @@ main > * {
     align-items: center;
 }
 
+.transaction__content,
 .card__content {
     width: 40%;
 }
 
+.transaction__heading,
 .card__heading {
     margin-top: 12px;
 }
 
+.transaction__desc,
 .card__desc {
     margin-top: 20px;
 }
 
+.transaction__list,
 .card__list {
     margin-top: 28px;
 }
 
+.transaction__item,
 .card__item {
     display: flex;
     align-items: center;
@@ -495,10 +500,12 @@ main > * {
     line-height: 1.67;
 }
 
+.transaction__heading + .transaction__heading,
 .card__item + .card__item {
     margin-top: 18px;
 }
 
+.transaction__item::before,
 .card__item::before {
     content: "";
     display: block;
@@ -508,6 +515,7 @@ main > * {
     background: var(--primary-color);
 }
 
+.transaction__btn,
 .card__btn {
     --height: 58px;
 
