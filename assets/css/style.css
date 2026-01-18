@@ -665,6 +665,7 @@ main > * {
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 44px 48px 0px #0000001a;
+    text-align: center;
 }
 
 .transaction__choose {
@@ -676,6 +677,21 @@ main > * {
 
 .transaction__method-list {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
     margin-top: 20px;
+}
+
+.transaction__method {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #F2F2FA;
+}
+
+.transaction__method:last-child {
+    background: #F9EA63;
 }
