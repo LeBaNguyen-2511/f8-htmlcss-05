@@ -7,7 +7,9 @@ html {
 }
 
 body {
-    font-family: Open Sans, sans-serif;
+    font-family:
+        Open Sans,
+        sans-serif;
     font-size: 1.6rem;
 }
 
@@ -191,7 +193,9 @@ main > * {
     padding-left: 15px;
     border: none;
     outline: none;
-    font-family: Open Sans, sans-serif;
+    font-family:
+        Open Sans,
+        sans-serif;
     font-size: 1.6rem;
     line-height: 1.75;
 }
@@ -501,7 +505,7 @@ main > * {
     line-height: 1.67;
 }
 
-.transaction__heading + .transaction__heading,
+.transaction__item + .transaction__item,
 .card__item + .card__item {
     margin-top: 18px;
 }
@@ -661,6 +665,9 @@ main > * {
 
 .transaction_payment-method {
     position: absolute;
+    right: 26px;
+    bottom: 57px;
+    z-index: 1;
     padding: 28px;
     border-radius: 10px;
     background: #fff;
@@ -689,9 +696,111 @@ main > * {
     width: 63px;
     height: 48px;
     border-radius: 4px;
-    background: #F2F2FA;
+    background: #f2f2fa;
 }
 
 .transaction__method:last-child {
-    background: #F9EA63;
+    background: #f9ea63;
+}
+
+.transaction__banknote {
+    position: absolute;
+    right: 0;
+    bottom: 222px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264d6;
+    box-shadow: 0px 15px 40px 0px #0000001a;
+}
+
+.transaction__banknote-img {
+    width: 42px;
+}
+
+/* ======================= Testimonial ======================= */
+.testimonial__up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial__heading {
+    margin-top: 12px;
+}
+
+.testimonial__desc {
+    width: 435px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.testimonial__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.testimonial__chat-box {
+    position: relative;
+    display: inline-block;
+}
+
+.testimonial__chat {
+    position: absolute;
+    top: 42px;
+    left: 28px;
+    right: 28px;
+    width: 514px;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    line-height: 1.55;
+    text-align: center;
+}
+
+.testimonial__user-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.testimonial__user-avatar {
+    display: flex;
+    align-items: flex-end;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: #439f90;
+    overflow: hidden;
+}
+
+.testimonial__user-avatar-first {
+    background: #4AB5E3;
+}
+
+.testimonial__user-img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.testimonial__user-name {
+    margin-top: 20px;
+    color: #070052;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.38;
+}
+
+.testimonial__user-job {
+    margin-top: 2px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
