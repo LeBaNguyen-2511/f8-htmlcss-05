@@ -787,7 +787,7 @@ main > * {
 }
 
 .testimonial__user-avatar-first {
-    background: #4AB5E3;
+    background: #4ab5e3;
 }
 
 .testimonial__user-img {
@@ -820,11 +820,59 @@ main > * {
 .testimonial__dot {
     width: 22px;
     height: 6px;
-    border: 1px solid #9B9FAB;
+    border: 1px solid #9b9fab;
     border-radius: 1px;
+    cursor: pointer;
 }
 
 .testimonial__dot:first-child {
     background: var(--primary-color);
     border: none;
+}
+
+/* ======================= Blog ======================= */
+.blog__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__up-left {
+    width: 42%;
+}
+
+.blog__heading {
+    margin-top: 6px;
+}
+
+.blog__desc {
+    margin-top: 18px;
+}
+
+.blog__btn {
+    --height: 58px;
+
+    min-width: 123px;
+}
+
+.blog_down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.blog__post {
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+    width: 570px;
+    height: 216px;
+    padding: 28px;
+    border: 1px solid #dfe2e8;
+    border-radius: 12px;
+}
+
+.blog__thumb {
+    height: 100%;
 }
