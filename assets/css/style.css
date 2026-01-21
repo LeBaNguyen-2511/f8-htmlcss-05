@@ -941,6 +941,7 @@ main > * {
     content: url(../img/app/star-group.svg);
     position: absolute;
     inset: 49px 112px;
+    pointer-events: none;
 }
 
 .app__title,
